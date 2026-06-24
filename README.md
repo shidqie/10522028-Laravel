@@ -1,59 +1,142 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 10522028-Laravel
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Deskripsi Project
 
-## About Laravel
+Project ini merupakan aplikasi web berbasis Laravel yang dibuat sebagai latihan dan pengembangan sistem informasi. Aplikasi ini dikembangkan untuk membantu proses pengelolaan data pada sistem rumah makan, khususnya dalam pengelolaan menu, kategori, dan data pendukung lainnya.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Project ini menggunakan framework Laravel karena memiliki struktur yang rapi, mendukung konsep MVC, serta memudahkan proses pembuatan fitur CRUD. Dengan adanya sistem ini, proses pengelolaan data dapat dilakukan secara lebih terstruktur dibandingkan pencatatan manual.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Identitas
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Nama: Akhfa Shidqie Muttaqien
+NIM: 10522028
+Program Studi: Sistem Informasi
+Project: Laravel Web Application
 
-## Learning Laravel
+## Teknologi yang Digunakan
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+* Laravel
+* PHP
+* MySQL
+* Blade Template
+* HTML
+* CSS
+* JavaScript
+* XAMPP
+* Git dan GitHub
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Fitur Utama
 
-## Laravel Sponsors
+Beberapa fitur yang terdapat dalam project ini antara lain:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Manajemen kategori
+2. Manajemen menu
+3. Tambah data menu
+4. Edit data menu
+5. Hapus data menu
+6. Menampilkan daftar data
+7. Pengelolaan data berbasis database
 
-### Premium Partners
+## Struktur Folder Penting
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Berikut beberapa folder penting dalam project Laravel ini:
 
-## Contributing
+```text
+app/
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Berisi file utama aplikasi, seperti model dan controller.
 
-## Code of Conduct
+```text
+database/
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Berisi file migration, seeder, dan konfigurasi database.
 
-## Security Vulnerabilities
+```text
+resources/views/
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Berisi file tampilan aplikasi yang menggunakan Blade Template.
 
-## License
+```text
+routes/web.php
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Berisi pengaturan route atau alamat halaman web.
+
+```text
+public/
+```
+
+Berisi file publik seperti gambar, CSS, dan JavaScript.
+
+## Cara Menjalankan Project
+
+1. Clone repository dari GitHub:
+
+```bash
+git clone https://github.com/shidqie/10522028-Laravel.git
+```
+
+2. Masuk ke folder project:
+
+```bash
+cd 10522028-Laravel
+```
+
+3. Install dependency Laravel:
+
+```bash
+composer install
+```
+
+4. Salin file environment:
+
+```bash
+cp .env.example .env
+```
+
+5. Generate application key:
+
+```bash
+php artisan key:generate
+```
+
+6. Atur konfigurasi database pada file `.env`:
+
+```env
+DB_DATABASE=nama_database
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+7. Jalankan migration:
+
+```bash
+php artisan migrate
+```
+
+8. Jalankan server Laravel:
+
+```bash
+php artisan serve
+```
+
+9. Buka aplikasi melalui browser:
+
+```text
+http://127.0.0.1:8000
+```
+
+## Catatan Pengembangan
+
+Project ini masih dapat dikembangkan lebih lanjut, khususnya pada bagian tampilan, validasi data, manajemen user, dan fitur laporan. Pengembangan selanjutnya dapat menambahkan sistem login, hak akses pengguna, dashboard admin, serta laporan transaksi agar aplikasi menjadi lebih lengkap.
+
+## Tujuan Project
+
+Tujuan dari project ini adalah untuk memahami proses pembuatan aplikasi web menggunakan Laravel, mulai dari pembuatan database, routing, controller, model, view, hingga proses upload project ke GitHub. Selain itu, project ini juga menjadi latihan dalam menerapkan konsep CRUD pada sistem informasi berbasis web.
+
+## Status Project
+
+Project ini masih dalam tahap pengembangan dan dapat diperbarui sesuai kebutuhan pembelajaran maupun kebutuhan sistem yang akan dibuat.
