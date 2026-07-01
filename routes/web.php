@@ -107,3 +107,10 @@ use App\Http\Controllers\PelangganController;
 // Route::get('/route-belajar-kirim-data', [ProdukController::class, 'index']);
 Route::resource('produk', ProdukController::class);
 Route::resource('pelanggan', PelangganController::class);
+
+// Materi 7
+use App\Http\Controllers\LoginController;
+
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/redirect/google', [LoginController::class, 'redirectToGoogle']);
+Route::get('/callback/google', [LoginController::class, 'googleCallback']);
