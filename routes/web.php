@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Materi 2
+use App\Http\Controllers\ProdukController;
+use App\Http\Controllers\PelangganController;
+
+
+// Materi 7
+use App\Http\Controllers\LoginController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -100,17 +108,14 @@ Route::get('/route-produk-2', function () {
 
 
 
-// Materi 2
-use App\Http\Controllers\ProdukController;
-use App\Http\Controllers\PelangganController;
-
+// Matteri 2
 // Route::get('/route-belajar-kirim-data', [ProdukController::class, 'index']);
 Route::resource('produk', ProdukController::class);
 Route::resource('pelanggan', PelangganController::class);
 
-// Materi 7
-use App\Http\Controllers\LoginController;
 
+
+// Matteri 7
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/redirect/google', [LoginController::class, 'redirectToGoogle']);
 Route::get('/callback/google', [LoginController::class, 'googleCallback']);
