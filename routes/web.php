@@ -106,14 +106,10 @@ Route::get('/route-produk-2', function () {
 
 });
 
-
-
 // Matteri 2
 // Route::get('/route-belajar-kirim-data', [ProdukController::class, 'index']);
 Route::resource('produk', ProdukController::class);
 Route::resource('pelanggan', PelangganController::class);
-
-
 
 // Matteri 7
 Route::get('/login', [LoginController::class, 'index']);
